@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin gtk2-x11-runtime librsvg2
+requires: cygwin gtk2-x11 librsvg2
 external-source: librsvg2
 sdesc: "Scalable Vector Graphics GTK2 engine"
 ldesc: "libRSVG is a very fast SVG rendering engine written in C. It 
