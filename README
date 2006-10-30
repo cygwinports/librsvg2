@@ -5,29 +5,29 @@ support most of the SVG 1.2 specification, except the animation part.
 libRSVG is used in many projects for SVG rendering, most notably GNOME.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  gnome-vfs2-2.12.2-1
-  gtk2-x11-2.8.17-1
-  libcairo2-1.0.4-1
+  cygwin-1.5.21-2
+  gdk-pixbuf2-2.10.6-1
+  gnome-vfs2-2.14.2-1
+  gtk2-x11-2.10.6-1
+  libcairo2-1.2.4-1
   libcroco06-0.6.1-1
-  libgsf114-1.14.0-1
-  libpopt0-1.6.4-4
-  pango-1.10.4-1
+  libgsf114-1.14.2-1
+  pango-1.14.7-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.21-2
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.1.93-1
+  binutils-20060817-1
+  cygport-0.2.6-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  gtk-doc-1.5-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
+  gtk-doc-1.7-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
   pkg-config-0.20-1
-  sed-4.1.4-1
+  sed-4.1.5-1
 
 Canonical homepage:
   http://librsvg.sourceforge.net/
@@ -38,47 +38,50 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack librsvg2-2.14.4-X-src.tar.bz2
+  unpack librsvg2-2.16.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./librsvg2-2.14.4-X.cygport all
+  cygport ./librsvg2-2.16.0-X.cygport all
 
 This will create:
-  /usr/src/gtk2-x11-engines-svg-2.14.4-X.tar.bz2
-  /usr/src/librsvg2-2.14.4-X-src.tar.bz2
-  /usr/src/librsvg2-2.14.4-X.tar.bz2
-  /usr/src/librsvg2-doc-2.14.4-X.tar.bz2
-  /usr/src/rsvg-2.14.4-X.tar.bz2
+  /usr/src/gtk2-x11-engines-svg-2.16.0-X.tar.bz2
+  /usr/src/librsvg2-2.16.0-X-src.tar.bz2
+  /usr/src/librsvg2-2.16.0-X.tar.bz2
+  /usr/src/librsvg2-devel-2.16.0-X.tar.bz2
+  /usr/src/librsvg2-doc-2.16.0-X.tar.bz2
+  /usr/src/rsvg-2.16.0-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the librsvg2 package:
+Files included in the binary packages:
 
+(librsvg2)
   /etc/postinstall/librsvg2.sh
   /usr/bin/cygrsvg-2-2.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/svg_loader.dll
+  /usr/lib/gtk-2.0/2.10.0/loaders/svg_loader.la
+  /usr/share/doc/Cygwin/librsvg2-2.16.0.README
+  /usr/share/doc/librsvg2-2.16.0/AUTHORS
+  /usr/share/doc/librsvg2-2.16.0/COPYING
+  /usr/share/doc/librsvg2-2.16.0/COPYING.LIB
+  /usr/share/doc/librsvg2-2.16.0/ChangeLog
+  /usr/share/doc/librsvg2-2.16.0/INSTALL
+  /usr/share/doc/librsvg2-2.16.0/MAINTAINERS
+  /usr/share/doc/librsvg2-2.16.0/NEWS
+  /usr/share/doc/librsvg2-2.16.0/README
+  /usr/share/doc/librsvg2-2.16.0/TODO
+
+(librsvg2-devel)
   /usr/include/librsvg-2/librsvg/librsvg-enum-types.h
   /usr/include/librsvg-2/librsvg/librsvg-features.h
   /usr/include/librsvg-2/librsvg/rsvg-cairo.h
   /usr/include/librsvg-2/librsvg/rsvg.h
-  /usr/lib/gtk-2.0/2.4.0/loaders/svg_loader.dll
-  /usr/lib/gtk-2.0/2.4.0/loaders/svg_loader.la
   /usr/lib/librsvg-2.dll.a
   /usr/lib/librsvg-2.la
   /usr/lib/pkgconfig/librsvg-2.0.pc
-  /usr/share/doc/Cygwin/librsvg2-2.14.4.README
-  /usr/share/doc/librsvg2-2.14.4/AUTHORS
-  /usr/share/doc/librsvg2-2.14.4/COPYING
-  /usr/share/doc/librsvg2-2.14.4/COPYING.LIB
-  /usr/share/doc/librsvg2-2.14.4/ChangeLog
-  /usr/share/doc/librsvg2-2.14.4/INSTALL
-  /usr/share/doc/librsvg2-2.14.4/MAINTAINERS
-  /usr/share/doc/librsvg2-2.14.4/NEWS
-  /usr/share/doc/librsvg2-2.14.4/README
-  /usr/share/doc/librsvg2-2.14.4/TODO
 
-Files included in the doc package:
-
+(librsvg2-doc)
   /usr/share/gtk-doc/html/rsvg/home.png
   /usr/share/gtk-doc/html/rsvg/index.html
   /usr/share/gtk-doc/html/rsvg/index.sgml
@@ -97,13 +100,11 @@ Files included in the doc package:
   /usr/share/gtk-doc/html/rsvg/style.css
   /usr/share/gtk-doc/html/rsvg/up.png
 
-Files included in the gtk2-x11-engines-svg package:
+(gtk2-x11-engines-svg)
+  /usr/lib/gtk-2.0/2.10.0/engines/cygsvg.dll
+  /usr/lib/gtk-2.0/2.10.0/engines/libsvg.la
 
-  /usr/lib/gtk-2.0/2.4.0/engines/cygsvg.dll
-  /usr/lib/gtk-2.0/2.4.0/engines/libsvg.la
-
-Files included in the rsvg package:
-
+(rsvg)
   /usr/bin/rsvg
   /usr/bin/rsvg-convert.exe
   /usr/bin/rsvg-view.exe
@@ -113,6 +114,9 @@ Files included in the rsvg package:
 --------------------
 
 Port Notes:
+
+----- version 2.16.0-1 -----
+Version bump for GNOME 2.16, built for GTK+ 2.10.
 
 ----- version 2.14.4-1 -----
 Version bump.
