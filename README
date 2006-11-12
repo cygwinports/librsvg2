@@ -115,6 +115,9 @@ Files included in the binary packages:
 
 Port Notes:
 
+----- version 2.16.1-1 -----
+Version bump.
+
 ----- version 2.16.0-1 -----
 Version bump for GNOME 2.16, built for GTK+ 2.10.
 
