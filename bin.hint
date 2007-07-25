@@ -1,5 +1,5 @@
 category: Graphics Gnome
-requires: cygwin librsvg2 python
+requires: cygwin glib2 gtk2-x11 libX11_6 libcairo2 libgnomeprint22 libgnomeprintui22 librsvg2 python
 external-source: librsvg2
 sdesc: "GNOME Scalable Vector Graphics applications"
 ldesc: "libRSVG is a very fast SVG rendering engine written in C. It 
