@@ -5,35 +5,35 @@ support most of the SVG 1.2 specification, except the animation part.
 libRSVG is used in many projects for SVG rendering, most notably GNOME.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  gdk-pixbuf2-2.10.14-1
-  glib2-2.12.13-1
-  gnome-vfs2-2.18.1-1
-  libcairo2-1.4.10-1
+  cygwin-1.5.25-7
+  gdk-pixbuf2-2.12.5-1
+  glib2-2.14.5-1
+  gnome-vfs2-2.20.1-1
+  libcairo2-1.4.12-1
   libcroco06-0.6.1-1
   libfontconfig1-2.3.2-2
   libfreetype26-2.3.5-1
-  libgsf114-1.14.5-1
-  libxml2-2.6.28-2
-  pango-1.16.5-1
+  libgsf114-1.14.7-1
+  libxml2-2.6.30-1
+  pango-1.18.4-1
 (gtk2-x11-engines-svg)
-  gtk2-x11-2.10.14-1
+  gtk2-x11-2.12.5-1
 (rsvg)
-  gtk2-x11-2.10.14-1
+  gtk2-x11-2.12.5-1
   libX11_6-1.1.3-1
-  libgnomeprint22-2.18.0-1
-  libgnomeprintui22-2.18.0-1
+  libgnomeprint22-2.18.2-1
+  libgnomeprintui22-2.18.1-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-1
+  automake1.10-1.10-1
   binutils-20060817-1
-  cygport-0.3.5-1
-  gawk-3.1.5-4
+  cygport-0.3.7-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gtk-doc-1.8-1
+  gtk-doc-1.9-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
@@ -48,18 +48,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack librsvg2-2.18.2-X-src.tar.bz2
+  unpack librsvg2-2.20.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./librsvg2-2.18.2-X.cygport all
+  cygport ./librsvg2-2.20.0-X.cygport all
 
 This will create:
-  /usr/src/gtk2-x11-engines-svg-2.18.2-X.tar.bz2
-  /usr/src/librsvg2-2.18.2-X-src.tar.bz2
-  /usr/src/librsvg2-2.18.2-X.tar.bz2
-  /usr/src/librsvg2-devel-2.18.2-X.tar.bz2
-  /usr/src/rsvg-2.18.2-X.tar.bz2
+  /usr/src/gtk2-x11-engines-svg-2.20.0-X.tar.bz2
+  /usr/src/librsvg2-2.20.0-X-src.tar.bz2
+  /usr/src/librsvg2-2.20.0-X.tar.bz2
+  /usr/src/librsvg2-devel-2.20.0-X.tar.bz2
+  /usr/src/rsvg-2.20.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -70,16 +70,16 @@ Files included in the binary packages:
   /usr/bin/cygrsvg-2-2.dll
   /usr/lib/gtk-2.0/2.10.0/loaders/svg_loader.dll
   /usr/lib/gtk-2.0/2.10.0/loaders/svg_loader.la
-  /usr/share/doc/Cygwin/librsvg2-2.18.2.README
-  /usr/share/doc/librsvg2-2.18.2/AUTHORS
-  /usr/share/doc/librsvg2-2.18.2/COPYING
-  /usr/share/doc/librsvg2-2.18.2/COPYING.LIB
-  /usr/share/doc/librsvg2-2.18.2/ChangeLog
-  /usr/share/doc/librsvg2-2.18.2/INSTALL
-  /usr/share/doc/librsvg2-2.18.2/MAINTAINERS
-  /usr/share/doc/librsvg2-2.18.2/NEWS
-  /usr/share/doc/librsvg2-2.18.2/README
-  /usr/share/doc/librsvg2-2.18.2/TODO
+  /usr/share/doc/Cygwin/librsvg2-2.20.0.README
+  /usr/share/doc/librsvg2-2.20.0/AUTHORS
+  /usr/share/doc/librsvg2-2.20.0/COPYING
+  /usr/share/doc/librsvg2-2.20.0/COPYING.LIB
+  /usr/share/doc/librsvg2-2.20.0/ChangeLog
+  /usr/share/doc/librsvg2-2.20.0/INSTALL
+  /usr/share/doc/librsvg2-2.20.0/MAINTAINERS
+  /usr/share/doc/librsvg2-2.20.0/NEWS
+  /usr/share/doc/librsvg2-2.20.0/README
+  /usr/share/doc/librsvg2-2.20.0/TODO
 
 (librsvg2-devel)
   /usr/include/librsvg-2/librsvg/librsvg-enum-types.h
@@ -121,6 +121,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 2.20.0-1 -----
+Version bump for GNOME 2.20.
 
 ----- version 2.18.2-1 -----
 Version bump.
