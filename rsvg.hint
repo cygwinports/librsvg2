@@ -1,7 +1,7 @@
-category: Gnome
-requires: cygwin glib2 gtk2-x11 librsvg2
+category: Graphics Gnome
+requires: cygwin libcairo2 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 librsvg2_2 libX11_6 python
 external-source: librsvg2
-sdesc: "Scalable Vector Graphics GTK2 engine"
+sdesc: "GNOME Scalable Vector Graphics applications"
 ldesc: "libRSVG is a very fast SVG rendering engine written in C. It 
 currently support most of the SVG 1.2 specification, except the 
 animation part. libRSVG is used in many projects for SVG rendering, 
