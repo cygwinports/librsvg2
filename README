@@ -5,34 +5,35 @@ support most of the SVG 1.2 specification, except the animation part.
 libRSVG is used in many projects for SVG rendering, most notably GNOME.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libcairo2-1.8.4-1
-  libcroco0.6_3-0.6.1-2
-  libfontconfig1-2.6.0-1
-  libfreetype26-2.3.7-1
-  libgdk_pixbuf2.0_0-2.14.5-1
-  libglib2.0_0-2.18.3-1
-  libgsf1_114-1.14.10-1
-  libpango1.0_0-1.22.3-1
-  libxml2-2.7.2-1
+  cygwin-1.7.0-44
+  libcairo2-1.8.6-10
+  libcroco0.6_3-0.6.1-10
+  libfontconfig1-2.6.0-10
+  libfreetype6-2.3.9-1
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.0-1
+  libglib2.0_0-2.20.0-1
+  libgsf1_114-1.14.11-10
+  libpango1.0_0-1.24.0-1
+  libxml2-2.7.3-10
 (gtk2.0-engines-svg)
-  libgtk2.0_0-2.14.5-1
+  libgtk2.0_0-2.16.0-1
 (rsvg)
-  libgtk2.0_0-2.14.5-1
-  libX11_6-1.1.5-1
+  libgtk2.0_0-2.16.0-1
+  libX11_6-1.2-10
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
-  gtk-doc-1.11-1
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-1
+  gtk-doc-1.11-2
+  libtool-2.2.6a-2
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -45,18 +46,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack librsvg2-2.22.3-X-src.tar.bz2
+  unpack librsvg2-2.26.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./librsvg2-2.22.3-X.cygport all
+  cygport ./librsvg2-2.26.0-X.cygport all
 
 This will create:
-  /usr/src/gtk2-x11-engines-svg-2.22.3-X.tar.bz2
-  /usr/src/librsvg2-2.22.3-X-src.tar.bz2
-  /usr/src/librsvg2-devel-2.22.3-X.tar.bz2
-  /usr/src/librsvg2_2-2.22.3-X.tar.bz2
-  /usr/src/rsvg-2.22.3-X.tar.bz2
+  /usr/src/gtk2.0-engines-svg-2.26.0-X.tar.bz2
+  /usr/src/librsvg2-2.26.0-X-src.tar.bz2
+  /usr/src/librsvg2-devel-2.26.0-X.tar.bz2
+  /usr/src/librsvg2_2-2.26.0-X.tar.bz2
+  /usr/src/rsvg-2.26.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -67,15 +68,14 @@ Files included in the binary packages:
   /usr/bin/cygrsvg-2-2.dll
   /usr/lib/gtk-2.0/2.10.0/loaders/svg_loader.dll
   /usr/lib/gtk-2.0/2.10.0/loaders/svg_loader.la
-  /usr/share/doc/librsvg2-2.22.3/AUTHORS
-  /usr/share/doc/librsvg2-2.22.3/COPYING
-  /usr/share/doc/librsvg2-2.22.3/COPYING.LIB
-  /usr/share/doc/librsvg2-2.22.3/ChangeLog
-  /usr/share/doc/librsvg2-2.22.3/INSTALL
-  /usr/share/doc/librsvg2-2.22.3/MAINTAINERS
-  /usr/share/doc/librsvg2-2.22.3/NEWS
-  /usr/share/doc/librsvg2-2.22.3/README
-  /usr/share/doc/librsvg2-2.22.3/TODO
+  /usr/share/doc/librsvg2/AUTHORS
+  /usr/share/doc/librsvg2/COPYING
+  /usr/share/doc/librsvg2/COPYING.LIB
+  /usr/share/doc/librsvg2/ChangeLog
+  /usr/share/doc/librsvg2/MAINTAINERS
+  /usr/share/doc/librsvg2/NEWS
+  /usr/share/doc/librsvg2/README
+  /usr/share/doc/librsvg2/TODO
 
 (librsvg2-devel)
   /usr/include/librsvg-2/librsvg/librsvg-enum-types.h
@@ -118,54 +118,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.22.3-1 -----
-Version bump.
-
------ version 2.22.2-1 -----
-Version bump for GNOME 2.22.
-
------ version 2.20.0-1 -----
-Version bump for GNOME 2.20.
-
------ version 2.18.2-1 -----
-Version bump.
-
------ version 2.18.0-1 -----
-Version bump for GNOME 2.18.
-
------ version 2.16.1-1 -----
-Version bump.
-
------ version 2.16.0-1 -----
-Version bump for GNOME 2.16, built for GTK+ 2.10.
-
------ version 2.14.4-1 -----
-Version bump.
-
------ version 2.14.3-1 -----
-Version bump for GNOME 2.14; requires libgsf-1.14 and cairo.
-
------ version 2.12.7-2 -----
-Rebuilt for libgsf-1.13.
-
------ version 2.12.7-1 -----
-Version bump.
-
------ version 2.12.2-1 -----
-Version bump.
-All Cygwin build patches accepted upstream.
-
------ version 2.12.0-1 -----
-Update for GNOME 2.12.
-Includes postinstall script which calls gdk-pixbuf-query-loaders.
-
------ version 2.9.5-1 -----
-Update for GNOME 2.10.
-The rsvg applications and GTK theme engine are now provided
-in separate packages.
-
------ version 2.8.1-1 -----
-Initial release for Cygwin.
+----- version 2.26.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:
