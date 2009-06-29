@@ -1,5 +1,5 @@
 category: Graphics Gnome
-requires: cygwin libcairo2 libcroco0.6_3 libfontconfig1 libfreetype6 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgsf1_114 libpango1.0_0 libxml2
+requires: libcairo2 libcroco0.6_3 libfontconfig1 libfreetype6 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgsf1_114 libpango1.0_0 libxml2
 external-source: librsvg2
 sdesc: "GNOME Scalable Vector Graphics library"
 ldesc: "libRSVG is a very fast SVG rendering engine written in C. It 
