@@ -5,36 +5,37 @@ support most of the SVG 1.2 specification, except the animation part.
 libRSVG is used in many projects for SVG rendering, most notably GNOME.
 
 Runtime requirements:
-  cygwin-1.7.0-44
-  libcairo2-1.8.6-10
-  libcroco0.6_3-0.6.1-10
-  libfontconfig1-2.6.0-10
-  libfreetype6-2.3.9-1
-  libgcc1-4.3.2-2
-  libgdk_pixbuf2.0_0-2.16.0-1
-  libglib2.0_0-2.20.0-1
-  libgsf1_114-1.14.11-10
-  libpango1.0_0-1.24.0-1
-  libxml2-2.7.3-10
+  cygwin-1.7.1-1
+  libcairo2-1.8.8-1
+  libcroco0.6_3-0.6.2-10
+  libfontconfig1-2.7.3-1
+  libfreetype6-2.3.11-1
+  libgcc1-4.3.4-3
+  libgdk_pixbuf2.0_0-2.18.3-1
+  libglib2.0_0-2.22.2-1
+  libgsf1_114-1.14.16-1
+  libpango1.0_0-1.26.0-1
+  libxml2-2.7.6-1
 (gtk2.0-engines-svg)
-  libgtk2.0_0-2.16.0-1
+  libgtk2.0_0-2.18.3-1
 (rsvg)
-  libgtk2.0_0-2.16.0-1
-  libX11_6-1.2-10
+  libgtk2.0_0-2.18.3-1
+  libX11_6-1.3.2-2
+  python
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gnome-common-2.26.0-1
+  autoconf2.5-2.65-1
+  automake1.10-1.10.3-1
+  binutils-2.19.51-1
+  cygport-0.9.80-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  gnome-common-2.28.0-1
   gtk-doc-1.11-2
-  libtool-2.2.6a-2
+  libtool-2.2.7a-14
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical homepage:
@@ -53,6 +54,7 @@ Build instructions:
   cygport ./librsvg2-2.26.0-X.cygport all
 
 This will create:
+  /usr/src/gdk-pixbuf2.0-svg-2.26.0-X.tar.bz2
   /usr/src/gtk2.0-engines-svg-2.26.0-X.tar.bz2
   /usr/src/librsvg2-2.26.0-X-src.tar.bz2
   /usr/src/librsvg2-devel-2.26.0-X.tar.bz2
@@ -61,62 +63,10 @@ This will create:
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(librsvg2_2)
-  /etc/postinstall/librsvg2.sh
-  /usr/bin/cygrsvg-2-2.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/svg_loader.dll
-  /usr/lib/gtk-2.0/2.10.0/loaders/svg_loader.la
-  /usr/share/doc/librsvg2/AUTHORS
-  /usr/share/doc/librsvg2/COPYING
-  /usr/share/doc/librsvg2/COPYING.LIB
-  /usr/share/doc/librsvg2/ChangeLog
-  /usr/share/doc/librsvg2/MAINTAINERS
-  /usr/share/doc/librsvg2/NEWS
-  /usr/share/doc/librsvg2/README
-  /usr/share/doc/librsvg2/TODO
-
-(librsvg2-devel)
-  /usr/include/librsvg-2/librsvg/librsvg-enum-types.h
-  /usr/include/librsvg-2/librsvg/librsvg-features.h
-  /usr/include/librsvg-2/librsvg/rsvg-cairo.h
-  /usr/include/librsvg-2/librsvg/rsvg.h
-  /usr/lib/librsvg-2.dll.a
-  /usr/lib/librsvg-2.la
-  /usr/lib/pkgconfig/librsvg-2.0.pc
-  /usr/share/gtk-doc/html/rsvg/home.png
-  /usr/share/gtk-doc/html/rsvg/index.html
-  /usr/share/gtk-doc/html/rsvg/index.sgml
-  /usr/share/gtk-doc/html/rsvg/ix01.html
-  /usr/share/gtk-doc/html/rsvg/left.png
-  /usr/share/gtk-doc/html/rsvg/pt02.html
-  /usr/share/gtk-doc/html/rsvg/pt03.html
-  /usr/share/gtk-doc/html/rsvg/pt04.html
-  /usr/share/gtk-doc/html/rsvg/right.png
-  /usr/share/gtk-doc/html/rsvg/rsvg-Cairo.html
-  /usr/share/gtk-doc/html/rsvg/rsvg-Core-API.html
-  /usr/share/gtk-doc/html/rsvg/rsvg-GdkPixbuf.html
-  /usr/share/gtk-doc/html/rsvg/rsvg.devhelp
-  /usr/share/gtk-doc/html/rsvg/rsvg.devhelp2
-  /usr/share/gtk-doc/html/rsvg/rsvg.html
-  /usr/share/gtk-doc/html/rsvg/style.css
-  /usr/share/gtk-doc/html/rsvg/up.png
-
-(gtk2.0-engines-svg)
-  /usr/lib/gtk-2.0/2.10.0/engines/cygsvg.dll
-  /usr/lib/gtk-2.0/2.10.0/engines/libsvg.la
-
-(rsvg)
-  /usr/bin/rsvg
-  /usr/bin/rsvg-convert.exe
-  /usr/bin/rsvg-view.exe
-  /usr/share/man/man1/rsvg.1.gz
-  /usr/share/pixmaps/svg-viewer.svg
-
---------------------
-
 Port Notes:
+
+----- version 2.26.0-2 -----
+Separated GdkPixbuf loader into its own package.
 
 ----- version 2.26.0-1 -----
 Initial release of GNOME 2.26 for Cygwin 1.7.
