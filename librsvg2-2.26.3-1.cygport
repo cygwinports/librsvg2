@@ -5,18 +5,17 @@ inherit gnome2
 DESCRIPTION="GNOME SVG library, GDK loader, and utilities"
 HOMEPAGE="http://librsvg.sourceforge.net/"
 
-gtk_api=$(pkg-config --variable=gtk_binary_version gtk+-2.0)
-
 PKG_NAMES="${PN} ${PN}_2 ${PN}-devel gdk-pixbuf2.0-svg gtk2.0-engines-svg rsvg"
 librsvg2_2_CONTENTS="usr/bin/*-2-2.dll usr/share/doc/"
 librsvg2_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
-gdk_pixbuf2_0_svg_CONTENTS="etc/ usr/lib/gtk-2.0/${gtk_api}/loaders/"
-gtk2_0_engines_svg_CONTENTS="usr/lib/gtk-2.0/${gtk_api}/engines/"
+gdk_pixbuf2_0_svg_CONTENTS="etc/ usr/lib/gtk-2.0/*/loaders/"
+gtk2_0_engines_svg_CONTENTS="usr/lib/gtk-2.0/*/engines/"
 rsvg_CONTENTS='usr/bin/rsvg* usr/share/man/ usr/share/pixmaps/'
+
+DIFF_EXCLUDES="librsvg-features.h"
 
 CYGCONF_ARGS="
 	--enable-gtk-theme
-	--disable-mozilla-plugin
 	--enable-pixbuf-loader
 	--with-croco
 	--with-svgz
