@@ -8,8 +8,8 @@ HOMEPAGE="http://librsvg.sourceforge.net/"
 PKG_NAMES="${PN} ${PN}_2 ${PN}-devel gdk-pixbuf2.0-svg gtk2.0-engines-svg rsvg"
 librsvg2_2_CONTENTS="usr/bin/*-2-2.dll usr/share/doc/"
 librsvg2_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
-gdk_pixbuf2_0_svg_CONTENTS="etc/ usr/lib/gtk-2.0/*/loaders/"
-gtk2_0_engines_svg_CONTENTS="usr/lib/gtk-2.0/*/engines/"
+gdk_pixbuf2_0_svg_CONTENTS="etc/ usr/lib/gdk-pixbuf-2.0/*/loaders/"
+gtk2_0_engines_svg_CONTENTS="usr/lib/gtk-2.0/*/engines/ usr/share/themes/"
 rsvg_CONTENTS='usr/bin/rsvg* usr/share/man/ usr/share/pixmaps/'
 
 DIFF_EXCLUDES="librsvg-features.h"
