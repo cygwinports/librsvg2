@@ -1,8 +1,0 @@
-category: Gnome
-requires: libgdk_pixbuf2.0_0 libglib2.0_0 librsvg2_2
-external-source: librsvg2
-sdesc: "GdkPixbuf SVG loader"
-ldesc: "libRSVG is a very fast SVG rendering engine written in C. It 
-currently support most of the SVG 1.2 specification, except the 
-animation part. libRSVG is used in many projects for SVG rendering, 
-most notably GNOME."

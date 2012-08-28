@@ -1,8 +1,0 @@
-category: Graphics Gnome
-requires: librsvg2_2 girepository-cairo1.0 girepository-GdkPixbuf2.0
-external-source: librsvg2
-sdesc: "GNOME Scalable Vector Graphics library (GObject Introspection data)"
-ldesc: "libRSVG is a very fast SVG rendering engine written in C. It 
-currently support most of the SVG 1.2 specification, except the 
-animation part. libRSVG is used in many projects for SVG rendering, 
-most notably GNOME."
