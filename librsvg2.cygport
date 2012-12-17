@@ -1,8 +1,10 @@
 ORIG_PN=${PN%${PV_MAJ}}
-
 inherit gnome2
 
-CATEGORY="Gnome"
+NAME="librsvg2"
+VERSION=2.36.4
+RELEASE=1
+CATEGORY="GNOME"
 SUMMARY="GNOME Scalable Vector Graphics library"
 DESCRIPTION="libRSVG is a very fast SVG rendering engine written in C. It
 currently support most of the SVG 1.2 specification, except the animation part.
@@ -41,5 +43,3 @@ CYGCONF_ARGS="
 	--with-croco
 	--with-svgz
 "
-
-KEEP_LA_FILES="shared"
