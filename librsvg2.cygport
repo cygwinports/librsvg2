@@ -1,10 +1,10 @@
-ORIG_PN=${PN%${PV_MAJ}}
+ORIG_PN="librsvg"
 inherit gnome2
 
 NAME="librsvg2"
-VERSION=2.36.4
+VERSION=2.40.1
 RELEASE=1
-CATEGORY="GNOME"
+CATEGORY="Libs"
 SUMMARY="GNOME Scalable Vector Graphics library"
 DESCRIPTION="libRSVG is a very fast SVG rendering engine written in C. It
 currently support most of the SVG 1.2 specification, except the animation part.
@@ -20,17 +20,19 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(pango)
 	pkgconfig(libxml-2.0)"
 
-PKG_NAMES="${PN}_2 ${PN}-devel girepository-Rsvg2.0 gdk-pixbuf2.0-svg gtk2.0-engines-svg rsvg"
+PKG_NAMES="${NAME}_2 ${NAME}-devel ${NAME}-doc girepository-Rsvg2.0 gdk-pixbuf2.0-svg rsvg"
 librsvg2_2_SUMMARY="${SUMMARY} (runtime)"
 librsvg2_2_CONTENTS="usr/bin/*-2-2.dll usr/share/doc/"
 librsvg2_devel_SUMMARY="${SUMMARY} (development)"
-librsvg2_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
+librsvg2_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
+librsvg2_doc_CATEGORY="Doc"
+librsvg2_doc_SUMMARY="${SUMMARY} (API documentation)"
+librsvg2_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_Rsvg2_0_SUMMARY="${SUMMARY} (GObject Introspection)"
 girepository_Rsvg2_0_CONTENTS="usr/*/gir*/Rsvg-2.0.*"
 gdk_pixbuf2_0_svg_SUMMARY="GdkPixbuf loader for SVG"
 gdk_pixbuf2_0_svg_CONTENTS="etc/ usr/lib/gdk-pixbuf-2.0/*/loaders/"
-gtk2_0_engines_svg_SUMMARY="GTK+ SVG theme engine"
-gtk2_0_engines_svg_CONTENTS="usr/lib/gtk-2.0/*/engines/ usr/share/themes/"
+rsvg_CATEGORY="Graphics"
 rsvg_SUMMARY="SVG converter and viewer"
 rsvg_CONTENTS='usr/bin/rsvg* usr/share/man/'
 
