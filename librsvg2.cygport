@@ -2,7 +2,7 @@ ORIG_PN="librsvg"
 inherit gnome2
 
 NAME="librsvg2"
-VERSION=2.40.1
+VERSION=2.40.6
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME Scalable Vector Graphics library"
