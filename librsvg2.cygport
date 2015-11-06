@@ -2,7 +2,7 @@ ORIG_PN="librsvg"
 inherit gnome2
 
 NAME="librsvg2"
-VERSION=2.40.9
+VERSION=2.40.11
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME Scalable Vector Graphics library"
@@ -24,6 +24,7 @@ PKG_NAMES="${NAME}_2 ${NAME}-devel ${NAME}-doc girepository-Rsvg2.0 gdk-pixbuf2.
 librsvg2_2_SUMMARY="${SUMMARY} (runtime)"
 librsvg2_2_CONTENTS="usr/bin/*-2-2.dll usr/share/doc/"
 librsvg2_devel_SUMMARY="${SUMMARY} (development)"
+librsvg2_devel_REQUIRES="girepository-Rsvg2.0"
 librsvg2_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
 librsvg2_doc_CATEGORY="Doc"
 librsvg2_doc_SUMMARY="${SUMMARY} (API documentation)"
