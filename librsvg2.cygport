@@ -2,7 +2,7 @@ ORIG_PN="librsvg"
 inherit gnome2
 
 NAME="librsvg2"
-VERSION=2.40.16
+VERSION=2.40.17
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME Scalable Vector Graphics library"
@@ -32,7 +32,11 @@ librsvg2_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_Rsvg2_0_SUMMARY="${SUMMARY} (GObject Introspection)"
 girepository_Rsvg2_0_CONTENTS="usr/*/gir*/Rsvg-2.0.*"
 gdk_pixbuf2_0_svg_SUMMARY="GdkPixbuf loader for SVG"
-gdk_pixbuf2_0_svg_CONTENTS="etc/ usr/lib/gdk-pixbuf-2.0/*/loaders/"
+gdk_pixbuf2_0_svg_CONTENTS="
+	etc/
+	usr/lib/gdk-pixbuf-2.0/*/loaders/
+	usr/share/thumbnailers/librsvg.thumbnailer
+"
 rsvg_CATEGORY="Graphics"
 rsvg_SUMMARY="SVG converter and viewer"
 rsvg_CONTENTS='usr/bin/rsvg* usr/share/man/'
